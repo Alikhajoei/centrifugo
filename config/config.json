@@ -3,8 +3,9 @@
     "token": {
       "hmac_secret_key": "da01278c-7ae9-4570-be96-7bc7ebf4a441"
     },
-    "allowed_origins": ["*"]
-
+    "allowed_origins": ["*"],
+    "insecure": false,
+    "anonymous": false
   },
   "http_api": {
     "key": "183ef5c2-0d31-49ee-848e-8ab9a68ad136"
@@ -14,19 +15,43 @@
     "password": "4dae14d4-2491-4e12-81b6-0f564beb894c",
     "secret": "61301982-d4cc-471a-9efe-7b6ce38c8dd0"
   },
-  "channel": {
-    "namespaces": [
+  "namespaces": [
     {
-        "name": "personal",
-        "presence": true,
-        "history_size": 300,
-        "history_ttl": "300s",
-        "join_leave": true,
-        "force_push_join_leave": true,
-        "allow_publish_for_subscriber": true,
-        "allow_presence_for_subscriber": true,
-        "allow_history_for_subscriber": true
-      }
-    ]
-  }
+      "name": "personal",
+      "presence": true,
+      "history_size": 300,
+      "history_ttl": "300s",
+      "history_recover": true,
+      "join_leave": true,
+      "force_push_join_leave": true,
+      "allow_publish_for_subscriber": true,
+      "allow_presence_for_subscriber": true,
+      "allow_history_for_subscriber": true
+    },
+    {
+      "name": "chat",
+      "presence": true,
+      "history_size": 100,
+      "history_ttl": "3600s",
+      "history_recover": true,
+      "join_leave": true,
+      "force_push_join_leave": true,
+      "allow_publish_for_client": false,
+      "allow_presence_for_subscriber": true,
+      "allow_history_for_subscriber": true
+    },
+    {
+      "name": "room",
+      "presence": true,
+      "history_size": 200,
+      "history_ttl": "1800s",
+      "history_recover": true,
+      "join_leave": true,
+      "force_push_join_leave": true,
+      "allow_publish_for_subscriber": false,
+      "allow_presence_for_subscriber": true,
+      "allow_history_for_subscriber": true
+    }
+  ],
+  "log_level": "info"
 }
