@@ -16,16 +16,14 @@
     "secret": "61301982-d4cc-471a-9efe-7b6ce38c8dd0"
   },
   "channel": {
-    "config": {
-      "namespaces": [
-        {
-          "name": "personal",
-          "presence": true,
-          "history_size": 2,
-          "history_ttl": "1h",
-          "force_recovery": true
-        }
-      ]
-    }
+    "namespaces": [
+      {
+        "name": "personal",
+        "presence": true,
+        "history_size": 2,
+        "history_ttl": "1h",
+        "force_recovery": true
+      }
+    ]
   }
 }
