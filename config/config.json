@@ -3,7 +3,9 @@
     "token": {
       "hmac_secret_key": "da01278c-7ae9-4570-be96-7bc7ebf4a441"
     },
-    "allowed_origins": ["*"]
+    "allowed_origins": ["*"],
+    "user_subscribe_to_personal": true,
+    "user_personal_channel_namespace": "personal"
   },
   "http_api": {
     "key": "183ef5c2-0d31-49ee-848e-8ab9a68ad136"
@@ -14,8 +16,6 @@
     "secret": "61301982-d4cc-471a-9efe-7b6ce38c8dd0"
   },
   "channel": {
-    "user_subscribe_to_personal": true,
-    "user_personal_channel_namespace": "personal",
     "namespaces": [
       {
         "name": "personal",
