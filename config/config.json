@@ -3,7 +3,9 @@
   "admin_password": "4dae14d4-2491-4e12-81b6-0f564beb894c",
   "admin_secret": "61301982-d4cc-471a-9efe-7b6ce38c8dd0",
   "api_key": "183ef5c2-0d31-49ee-848e-8ab9a68ad136",
-  "admin": true,
+  "admin": {
+    "enabled": true
+  },
   "user_subscribe_to_personal": true,
   "user_personal_channel_namespace": "personal",
   "allowed_origins": [
