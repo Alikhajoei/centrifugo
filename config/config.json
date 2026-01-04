@@ -1,8 +1,12 @@
 {
-  "token_hmac_secret_key": "da01278c-7ae9-4570-be96-7bc7ebf4a441",
-  "api_key": "183ef5c2-0d31-49ee-848e-8ab9a68ad136",
-  "http_server": {
+  "client": {
+    "token": {
+      "hmac_secret_key": "da01278c-7ae9-4570-be96-7bc7ebf4a441"
+    },
     "allowed_origins": ["*"]
+  },
+  "http_api": {
+    "key": "183ef5c2-0d31-49ee-848e-8ab9a68ad136"
   },
   "admin": {
     "enabled": true,
