@@ -59,5 +59,8 @@
         "allow_history_for_subscriber": true
       }
     ]
-  }
+  },
+      "websocket": {
+        "read_buffer_size": 512
+    }
 }
