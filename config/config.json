@@ -4,13 +4,7 @@
       "hmac_secret_key": "da01278c-7ae9-4570-be96-7bc7ebf4a441"
     },
     "allowed_origins": [
-      "http://localhost:3000",
-      "http://localhost:8000",
-      "http://127.0.0.1:3000",
-      "http://127.0.0.1:8000",
-      "http://127.0.0.1:5500",
-      "https://cf.nobeen.com",
-      "http://cf.nobeen.com"
+    "*"
     ]
   },
   "http_api": {
