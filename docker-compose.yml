@@ -2,16 +2,12 @@ services:
   centrifugo:
     image: centrifugo/centrifugo:v6
     container_name: centrifugo
-    user: "0:0"  
+    user: "0:0" 
     ports:
       - "8000:8000"
     volumes:
-      - ./:/centrifugo/
-    environment:
-      - CENTRIFUGO_ADMIN=true
-      - CENTRIFUGO_ADMIN_PASSWORD=4dae14d4-2491-4e12-81b6-0f564beb894c
-      - CENTRIFUGO_ADMIN_SECRET=61301982-d4cc-471a-9efe-7b6ce38c8dd0
-    command: centrifugo -c config.json
+      - ./config:/centrifugo 
+    command: centrifugo -c config.json 
     ulimits:
       nofile:
         soft: 65535
